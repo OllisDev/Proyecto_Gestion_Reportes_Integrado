@@ -1,7 +1,7 @@
-module com.example.reports {
-    requires javafx.controls;
-    requires javafx.fxml;
 
-    opens com.example.reports to javafx.fxml;
-    exports com.example.reports;
-}
+    module com.example.reports {
+        requires javafx.controls;
+        requires javafx.fxml;
+        requires java.sql;  // Agregamos el módulo necesario para JDBC
+    
+    }
